@@ -1,0 +1,14 @@
+div{
+
+    text-align: center;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+}
+.div1{
+    box-sizing: border-box;
+    width: 300px;
+    margin: 0 auto;
+    font-weight: bold;
+}

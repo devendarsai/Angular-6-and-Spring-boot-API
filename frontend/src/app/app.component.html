@@ -1,0 +1,41 @@
+<body>
+
+
+  <h1>Welcome to demo page</h1>
+
+  <div>
+    <form>
+      <label for="name"><strong> Name : </strong></label>
+      <input type="text" id="name" name="name" [(ngModel)]="name"> <br>
+
+      <!-- <p>Select Car: </p> -->
+      <!-- <select name="cars" id="cars" multiple="multiple">
+        <option value="Bugati">Bugati</option>
+        <option value="Tesla">Tesla</option>
+        <option value="Audi">Audi</option>
+        <option value="Benz">Benz</option>
+      </select> -->
+    </form>
+
+    <br>
+
+    <div class="div1">
+
+      <ng-multiselect-dropdown name="carsdropdown" [placeholder]="'Select car'" [data]="carsdata"
+        [(ngModel)]="selectedItems" [settings]="dropdownSettings" (onselect)="onItemSelect($event)">
+
+      </ng-multiselect-dropdown>
+
+    </div>
+
+    <br>
+
+    <div>
+      <button (click)="postdata()" class="btn btn-success" id='msg'>POST data</button>
+      <p id="msg">{{postmessage}} </p>
+
+      <button (click)="getdata()" class="btn btn-success" id='msg'>GET data</button>
+      <p id="msg">{{clickMessage}} </p>
+    </div>
+  </div>
+</body>
